@@ -297,7 +297,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', default='', type=str,
                         help='path to the model')
     parser.add_argument('--arch', default='resnet18', type=str,
-                        help='architecture')
+                        help='CNN architecture')
     parser.add_argument('--data', default='DIPn', type=str,
                         help='dataset')                    
     parser.add_argument('--split', default=42, type=int,
@@ -342,7 +342,7 @@ if __name__ == '__main__':
     if not os.path.exists(save_folder):
         os.mkdir(save_folder) 
 
-    for split in range(42, 47):
+    for split in [42]:
         print('===================================FOLD: ', split)
         args.split = split
         save_dir = save_folder + '/' + str(args.split)
