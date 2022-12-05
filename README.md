@@ -10,3 +10,7 @@ Modify the folder names in <mydataset.py> before running.
 
 ## Evaluation
 ```$ python eval.py --arch <> --data <> --split <>```
+
+
+Please reach out if you have any question or suggestion!
+[email](zsu@wakehealth.edu) 
